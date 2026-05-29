@@ -4,7 +4,7 @@ const Settings = () => {
   const [profile, setProfile] = useState({
     name: 'Alex Rivera',
     email: 'alex.rivera@company.com',
-    bio: 'Senior Data Scientist at Acme Corp. Focusing on predictive modeling, generative AI, and business automation strategies.'
+    bio: 'Senior Analyst at Acme Corp. Focusing on business intelligence, data analytics, and automation strategies.'
   });
   const [isSaving, setIsSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState(null);
@@ -170,7 +170,7 @@ const Settings = () => {
                       <h4 className="font-bold text-red-600">Danger Zone</h4>
                       <p className="text-xs text-slate-500 mt-1">Irreversibly delete this entire workspace.</p>
                    </div>
-                   <button onClick={() => confirm("ARE YOU ABSOLUTELY SURE? This will destroy all datasets and models.")} className="mt-4 w-full bg-red-500 text-white font-bold py-3 rounded-xl hover:bg-red-600 transition-all active:scale-95 shadow-lg shadow-red-500/20">Delete Workspace</button>
+                   <button onClick={() => confirm("ARE YOU ABSOLUTELY SURE? This will destroy all datasets and reports.")} className="mt-4 w-full bg-red-500 text-white font-bold py-3 rounded-xl hover:bg-red-600 transition-all active:scale-95 shadow-lg shadow-red-500/20">Delete Workspace</button>
                 </div>
              </div>
           </section>

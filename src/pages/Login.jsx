@@ -33,7 +33,7 @@ const Login = ({ onLogin }) => {
               <div className="size-8 text-primary">
                 <Sparkles size={32} />
               </div>
-              <h2 className="text-lg font-bold leading-tight tracking-tight">Analytica AI</h2>
+              <h2 className="text-lg font-bold leading-tight tracking-tight">Analytica</h2>
             </div>
             <div className="flex items-center gap-4">
               <span className="hidden md:inline text-slate-500 dark:text-slate-400 text-sm">Don't have an account?</span>
@@ -131,7 +131,7 @@ const Login = ({ onLogin }) => {
           </main>
           
           <footer className="p-6 text-center text-slate-500 dark:text-slate-600 text-xs bg-background-light dark:bg-background-dark">
-            © 2024 Analytica AI Corp. All rights reserved. <br className="md:hidden"/>
+            © 2024 Analytica Corp. All rights reserved. <br className="md:hidden"/>
             <a className="hover:text-primary mx-2" href="#">Privacy Policy</a> • 
             <a className="hover:text-primary mx-2" href="#">Terms of Service</a>
           </footer>

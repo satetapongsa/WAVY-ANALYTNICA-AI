@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Datasets from './pages/Datasets';
-import AIModels from './pages/AIModels';
 import Reports from './pages/Reports';
 import Settings from './pages/Settings';
 import MainLayout from './layouts/MainLayout';
@@ -44,7 +43,6 @@ function App() {
         >
           <Route index element={<Dashboard />} />
           <Route path="datasets" element={<Datasets />} />
-          <Route path="models" element={<AIModels />} />
           <Route path="reports" element={<Reports />} />
           <Route path="settings" element={<Settings />} />
           

@@ -46,7 +46,7 @@ const Datasets = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Datasets</h1>
-          <p className="text-slate-500 dark:text-slate-400 mt-1">Manage and organize your data sources for AI model training.</p>
+          <p className="text-slate-500 dark:text-slate-400 mt-1">Manage and organize your enterprise data sources.</p>
         </div>
         <div className="flex gap-3">
           <button className="px-4 py-2 text-sm font-bold rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm">
@@ -83,7 +83,7 @@ const Datasets = () => {
           {isUploading ? 'Uploading and analyzing...' : 'Upload new dataset'}
         </h3>
         <p className="text-slate-500 dark:text-slate-400 max-w-md mt-3 leading-relaxed">
-          Drag and drop your CSV, JSON, or Parquet files here, or click to browse from your computer. Our AI will automatically detect headers and types.
+          Drag and drop your CSV, JSON, or Parquet files here, or click to browse from your computer. The system will automatically detect headers and types.
         </p>
         <button className="mt-8 px-8 py-3 bg-slate-900 dark:bg-primary text-white text-sm font-bold rounded-xl hover:opacity-90 transition-all shadow-xl shadow-primary/10">
           {isUploading ? 'Please wait...' : 'Select Files'}
@@ -154,14 +154,14 @@ const Datasets = () => {
           color="text-emerald-500" 
           title="Active Datasets" 
           value={datasets.filter(d => d.status === 'Ready').length} 
-          subtitle="Ready for model training" 
+          subtitle="Ready for analysis" 
         />
         <FooterMetricCard 
-          icon="auto_awesome" 
+          icon="info" 
           color="text-indigo-500" 
-          title="AI Suggestions" 
+          title="Data Alerts" 
           value="4" 
-          subtitle="New insights available" 
+          subtitle="New alerts available" 
         />
       </div>
     </div>

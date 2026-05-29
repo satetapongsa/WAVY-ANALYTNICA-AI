@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 const Reports = () => {
   const [reports, setReports] = useState([
-    { id: 1, name: "Q4 Market Analysis Trends", detail: "3.4 MB • AI-Synthesized", date: "Oct 24, 2023", schedule: "Weekly", status: "Ready", type: "Predictive Model", icon: "picture_as_pdf", iconColor: "bg-rose-100 dark:bg-rose-500/10 text-rose-600 dark:text-rose-400" },
+    { id: 1, name: "Q4 Market Analysis Trends", detail: "3.4 MB • Data Summary", date: "Oct 24, 2023", schedule: "Weekly", status: "Ready", type: "Market Model", icon: "picture_as_pdf", iconColor: "bg-rose-100 dark:bg-rose-500/10 text-rose-600 dark:text-rose-400" },
     { id: 2, name: "User Retention Cohorts", detail: "1.2 MB • CSV Dataset", date: "Oct 23, 2023", schedule: "One-time", status: "Ready", type: "Raw Analytics", icon: "table_view", iconColor: "bg-blue-100 dark:bg-blue-500/10 text-blue-600 dark:text-blue-400" },
-    { id: 3, name: "Revenue Growth Projections", detail: "Calculating...", date: "Processing", schedule: "Started 2m ago", status: "Running AI", type: "Forecasting", icon: "auto_awesome", iconColor: "bg-amber-100 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400", pulsing: true },
-    { id: 4, name: "Churn Risk Assessment", detail: "2.1 MB • AI-Synthesized", date: "Oct 20, 2023", schedule: "Monthly", status: "Ready", type: "ML Insights", icon: "picture_as_pdf", iconColor: "bg-rose-100 dark:bg-rose-500/10 text-rose-600 dark:text-rose-400" }
+    { id: 3, name: "Revenue Growth Projections", detail: "Calculating...", date: "Processing", schedule: "Started 2m ago", status: "Generating", type: "Forecasting", icon: "sync", iconColor: "bg-amber-100 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400", pulsing: true },
+    { id: 4, name: "Churn Risk Assessment", detail: "2.1 MB • Generated Report", date: "Oct 20, 2023", schedule: "Monthly", status: "Ready", type: "System Insights", icon: "picture_as_pdf", iconColor: "bg-rose-100 dark:bg-rose-500/10 text-rose-600 dark:text-rose-400" }
   ]);
   const [search, setSearch] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
@@ -20,9 +20,9 @@ const Reports = () => {
         detail: "Calculating...",
         date: "Processing",
         schedule: "Started just now",
-        status: "Running AI",
-        type: "Custom Model",
-        icon: "auto_awesome",
+        status: "Generating",
+        type: "Custom Report",
+        icon: "description",
         iconColor: "bg-primary/10 text-primary",
         pulsing: true
       };
@@ -44,7 +44,7 @@ const Reports = () => {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
           <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">Analytics Reports</h1>
-          <p className="text-slate-500 dark:text-slate-400 mt-2 text-lg">Manage, schedule and export your AI-generated data insights.</p>
+          <p className="text-slate-500 dark:text-slate-400 mt-2 text-lg">Manage, schedule and export your data insights.</p>
         </div>
         <button 
           onClick={handleGenerate}
